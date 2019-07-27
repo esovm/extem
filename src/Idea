@@ -1,0 +1,46 @@
+resolving a target:
+    look through all the rules
+        if has the rule where the target is the result
+            get the left side
+            solve the left
+            if solved
+                record
+            else
+                next rule
+    if not solved
+        undecideable
+
+Solving the expression:
+    if not
+        get the parameter
+        if bool
+            not value
+        else
+            if expression
+                resolve sub-expression
+                if resolved
+                    value
+                else
+                    undecideable
+            if atomic
+                push it to the targets list
+                resolve
+                save result
+    else
+        get left hand side
+        solve
+        if solved
+            if true
+                if or
+                    solved
+                else
+                    solve right hand side
+        else
+            if or
+                solve right hand side
+                if solved
+                    value
+                else
+                    undecideable
+            else
+                undecideable

@@ -1,0 +1,16 @@
+A       =       True
+B+C=>A
+D => T
+B=>E
+
+B=>E
+D + C | !(A + D) => E
+True => A
+
+(A | B) => E
+
+!(!R) => R
+
+
+=ABC
+?D
